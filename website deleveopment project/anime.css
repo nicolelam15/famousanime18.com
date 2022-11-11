@@ -1,0 +1,167 @@
+/* myStyle.css */
+header {
+  background-color: black;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+  height: 120px;
+  z-index: 10;
+}
+
+header h1 {
+    float: left;
+    margin-top: 32px;
+}
+header h1 .color {
+    color: #02b8dd;
+}
+header nav {
+  float: right;
+  list-style-type: none;
+
+}
+
+header nav ul li {
+    float: left;
+    display: inline-block;
+    margin-top: 20px;
+}
+header nav ul li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-right: 20px;
+}
+
+header nav ul li a:hover {
+  border: none;
+  background:rgba(0, 0, 0, 0.4);
+  background:#fff;
+  padding:20px 20px; #000;
+  color:#1b1b1b;
+}
+
+body {
+ background-image: url('https://images.squarespace-cdn.com/content/v1/54fc8146e4b02a22841f4df7/1635375989273-AEHI849SCPX50MEWF8KS/Art_of_Senbon_Umishima_51.jpeg?format=2500w');
+ background-repeat: no-repeat;
+ background-size: cover;
+ margin: 0;
+ padding: 0;
+}
+
+h1 {
+ color: #FDFEFE;
+ font-size: 100px;
+ font-family: cursive;
+ font-weight: lighter;
+ text-transform: uppercase;
+ position: center;
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+ text-shadow: 5px 5px black;
+}
+
+img {
+ position: center;
+ margin-left: 900px;
+ margin-right: 500px;
+}
+
+p {
+ color: #FFFFFF;
+ text-align: center;
+ font-size: 30px;
+ font-weight: 300;
+ text-align: center;
+ text-shadow: 4px 4px black;
+ position: center;
+ text-align: center;
+ font-weight: bold;
+}
+
+body {
+ font-family: "Century Gothic", 'Lato', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.et-hero-tabs,
+
+.et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    padding: 0 2em;
+    
+ h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1rem;
+    }
+    
+ h3 {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+    }
+
+.et-hero-tabs-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    &--top {
+        position: fixed;
+        top: 0;
+    }
+
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 0.8rem;
+    &:hover {
+    transition: all 0.5s ease;
+    }
+}
+
+.et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+	.et-hero-tabs,
+	.et-slide {
+    h1 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+	}
+	.et-hero-tab {
+		font-size: 1rem;
+	}
+}
